@@ -9,7 +9,7 @@ ENV TZ PRC
 # 安装PostGIS依赖
 USER root
 RUN apt-get update && \
-    apt-get install -y postgis postgresql-14-postgis-3 && \
+    apt-get install -y postgis postgresql-14-postgis-3-scripts && \
     rm -rf /var/lib/apt/lists/*
 
 # 切换回PostgreSQL用户
