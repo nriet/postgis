@@ -1,4 +1,4 @@
-FROM bitnami/postgresql:14
+FROM bitnami/postgresql:15
 
 MAINTAINER Axiu <itzyx@vip.qq.com>
 
@@ -9,7 +9,7 @@ ENV TZ PRC
 # 安装PostGIS依赖
 USER root
 RUN apt-get update && \
-    apt-get install -y postgis postgresql-14-postgis-3-scripts && \
+    apt-get install -y postgis postgresql-15-postgis-3 && \
     rm -rf /var/lib/apt/lists/*
 
 # 切换回PostgreSQL用户

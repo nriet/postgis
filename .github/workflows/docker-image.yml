@@ -3,7 +3,7 @@ name: Publish Docker image   # workflow名称，可以在Github项目主页的�
 env:
   APP_NAME: postgis
   DOCKERHUB_REPO: nriet/postgis
-  APP_VERSION: pg14-postgis3
+  APP_VERSION: pg15-postgis3
 on:   # 配置触发workflow的事件
   push:
     branches:   # master分支有push时触发此workflow
