@@ -13,6 +13,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 # 切换回PostgreSQL用户
-USER postgres
+#USER postgres
 
 EXPOSE 5432
